@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SmartphoneLoss">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="381dp"
+            android:layout_height="639dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="44dp" android:layout_marginLeft="12dp" android:layout_marginStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp">
+
+        <TextView
+                android:text="２．派遣元上司に連絡する"
+                android:layout_width="282dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView35"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="24dp" android:layout_marginStart="24dp" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+        <TextView
+                android:text="１．所属先上司に連絡する"
+                android:layout_width="282dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView33"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="24dp" android:layout_marginStart="24dp" android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView30"/>
+        <TextView
+                android:text="③上長に報告する"
+                android:layout_width="320dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView30" app:fontFamily="sans-serif-black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="36dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView29"/>
+        <TextView
+                android:text="②関係機関(鉄道/バス、警察署等)への連絡・届出"
+                android:layout_width="336dp"
+                android:layout_height="26dp"
+                android:id="@+id/textView29" app:fontFamily="sans-serif-black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="44dp"
+                app:layout_constraintTop_toBottomOf="@+id/button10"/>
+        <Button
+                android:text="業務用移動機サポートデスクに電話をかける"
+                android:layout_width="305dp"
+                android:layout_height="38dp"
+                android:id="@+id/button10"
+                android:onClick="Telephone"
+                android:background="@android:color/holo_orange_dark" android:textColor="@android:color/background_light"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/textView26"/>
+        <TextView
+                android:text="　・社員番号：F1000639"
+                android:layout_width="282dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView26"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView25"/>
+        <TextView
+                android:text="　・所属部署：〇〇本部▲▲部□□部"
+                android:layout_width="282dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView25"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView24"/>
+        <TextView
+                android:text="　・社名、氏名、連絡先電話番号"
+                android:layout_width="282dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView24"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView23"/>
+        <TextView
+                android:layout_width="322dp"
+                android:layout_height="23dp"
+                android:id="@+id/textView23"
+                android:text="　データ削除/通話停止を依頼し、下記を伝える。"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView22"/>
+        <TextView
+                android:text="①業務用移動機サポートデスクに連絡する"
+                android:layout_width="283dp"
+                android:layout_height="23dp"
+                android:id="@+id/textView22" app:fontFamily="sans-serif-black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView21"/>
+        <TextView
+                android:text="＜紛失時の対応＞"
+                android:layout_width="121dp"
+                android:layout_height="21dp"
+                android:id="@+id/textView21" app:fontFamily="sans-serif-black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"/>
+        <Button
+                android:text="@string/button_tell"
+                android:layout_width="93dp"
+                android:layout_height="48dp"
+                android:id="@+id/button9"
+                android:onClick="Telephone"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="40dp"/>
+        <TextView
+                android:text="080-5074-9746"
+                android:layout_width="220dp"
+                android:layout_height="46dp"
+                android:id="@+id/textView19" android:textSize="30sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView17"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/textView"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="40dp" android:layout_marginRight="40dp"
+                android:textColor="@android:color/background_light"/>
+        <TextView
+                android:text="業務用携帯電話番号"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/textView17"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="323dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" android:id="@+id/linearLayout">
+            <Button
+                    android:text="所属GL"
+                    android:layout_width="94dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/button14"
+                    android:onClick="Telephone"
+                    tools:layout_editor_absoluteX="34dp" tools:layout_editor_absoluteY="557dp"
+                    android:layout_weight="1"/>
+            <Button
+                    android:text="所属部長"
+                    android:layout_width="94dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/button15"
+                    android:onClick="Telephone"
+                    tools:layout_editor_absoluteY="549dp" tools:layout_editor_absoluteX="250dp"
+                    android:layout_weight="1"/>
+            <Button
+                    android:text="所属TL"
+                    android:layout_width="94dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/button16"
+                    android:onClick="Telephone"
+                    tools:layout_editor_absoluteY="482dp"
+                    tools:layout_editor_absoluteX="138dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="212dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView35">
+            <Button
+                    android:text="MG"
+                    android:layout_width="94dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/button17"
+                    android:onClick="Telephone"
+                    tools:layout_editor_absoluteX="60dp" tools:layout_editor_absoluteY="679dp"
+                    android:layout_weight="1"/>
+            <Button
+                    android:text="副MG"
+                    android:layout_width="94dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/button18"
+                    android:onClick="Telephone"
+                    tools:layout_editor_absoluteX="222dp" tools:layout_editor_absoluteY="125dp"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

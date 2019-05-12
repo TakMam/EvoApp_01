@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EvoApp_0.1</string>
+    <string name="edit_message">Enter the ID</string>
+    <string name="button_send">LOGIN</string>
+    <string name="button_tell">TEL</string>
+</resources>
